@@ -10,14 +10,14 @@ const StripeSuccessPage = () => {
         <CheckCheck className="text-green-600 w-16 h-16 mx-auto my-6  animate-pulse" />
         <div className="text-center">
           <h3 className="md:text-2xl text-base text-gray-900 font-semibold text-center">
-            Payment Done!
+            {"Payment Done!"}
           </h3>
           <p className="my-2 text-gray-600">
-            Thank you for your purchase. We hope you'll love it.
+            {"Thank you for your purchase. We hope you'll love it."}
           </p>
-          <p>Have a great day!</p>
+          <p>{"Have a great day!"}</p>
           <Button asChild className="mt-5">
-            <Link href="/">GO Back</Link>
+            <Link href="/">{"GO Back"}</Link>
           </Button>
         </div>
       </div>
