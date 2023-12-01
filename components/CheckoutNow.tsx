@@ -11,11 +11,7 @@ const CheckoutNow = ({ price_id }: { price_id: string }) => {
   }
 
   return (
-    <Button
-      onClick={buyNow}
-      variant={"secondary"}
-      className="hover:outline hover:outline-gray-400 outline-1"
-    >
+    <Button onClick={buyNow} variant={"outline"}>
       Checkout Now
     </Button>
   );
