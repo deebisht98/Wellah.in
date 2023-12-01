@@ -31,8 +31,8 @@ const AllProducts = async () => {
 
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {data.map((product) => (
-            <Link href={`product/${product.slug}`}>
-              <div key={product._id} className="group relative">
+            <Link href={`product/${product.slug}`} key={product._id}>
+              <div className="group relative">
                 <div className="aspect-square w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-80">
                   <Image
                     src={product.imageUrl}

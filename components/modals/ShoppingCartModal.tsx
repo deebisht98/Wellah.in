@@ -52,8 +52,9 @@ const ShoppingCartModal = () => {
             <ul className="-my-6 divide-y divide-gray-200">
               {cartCount === 0 ? (
                 <h1 className="py-6">
-                  Hey, your cart doesn't look good empty. Add some products to
-                  it.
+                  {
+                    "Hey, your cart doesn't look good empty. Add some products to it."
+                  }
                 </h1>
               ) : (
                 <>
@@ -118,11 +119,11 @@ const ShoppingCartModal = () => {
               <p>₹{totalPrice}</p>
             </div>
             <p className="mt-0.5 text-sm text-gray-500">
-              Shipping and taxes are calculated at checkout.
+              {"Shipping and taxes are calculated at checkout."}
             </p>
             <div className="mt-6">
               <Button className="w-full" onClick={handleCheckoutClick}>
-                Checkout
+                {"Checkout"}
               </Button>
             </div>
             <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
@@ -132,7 +133,7 @@ const ShoppingCartModal = () => {
                   onClick={handleCartClick}
                   className="font-medium text-primary hover:text-primary/80"
                 >
-                  Continue Shopping
+                  {"Continue Shopping"}
                 </button>
               </p>
             </div>
