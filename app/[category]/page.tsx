@@ -1,5 +1,6 @@
 import { client } from "@/app/lib/sanity";
 import { fullProduct } from "@/app/types/productType";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -31,6 +32,9 @@ const CategoryPage = async ({ params }: { params: { category: string } }) => {
             Our Products for{" "}
             <span className="capitalize">{params.category}</span>
           </h2>
+          <Button variant={"outline"} asChild>
+            <Link href={"/"}>{"< Back"}</Link>
+          </Button>
         </div>
 
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">

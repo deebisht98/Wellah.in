@@ -6,6 +6,8 @@ import React from "react";
 import { Button } from "./ui/button";
 import { ShoppingBag } from "lucide-react";
 import { useShoppingCart } from "use-shopping-cart";
+import web_logo from "../app/assets/logo.png";
+import Image from "next/image";
 
 const links = [
   {
@@ -33,9 +35,16 @@ const Navbar = () => {
     <header className="mb-8 border-b">
       <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
         <Link href="/">
-          <h1 className="text-xl md:text-3xl font-bold">
-            Wel<span className="text-primary">lah</span>
-          </h1>
+          <div className="overflow-hidden rounded-lg md:h-[60px] h-[30px]">
+            <Image
+              src={web_logo}
+              alt={"wellah.in"}
+              height={60}
+              className="h-full w-full object-cover object-center cursor-pointer bg-white"
+              width={100}
+              priority
+            />
+          </div>
         </Link>
         <nav className="hidden gap-12 lg:flex 2xl:ml-16">
           {links.map((item, idx) => (
