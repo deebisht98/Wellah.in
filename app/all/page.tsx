@@ -1,5 +1,6 @@
 import { client } from "@/app/lib/sanity";
 import { simplifiedProduct } from "@/app/types/productType";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
